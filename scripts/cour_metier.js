@@ -1,3 +1,5 @@
+//Erroubaai Aya
+
 let index = 0;
 const slides = document.querySelectorAll(".slide");
 slides[0].classList.add('active');

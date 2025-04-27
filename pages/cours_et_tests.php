@@ -1,3 +1,6 @@
+<!-- Erroubaai Aya-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
     <div class="container">
         <a href="cour_metier.php">
             <div class="cour">
-                cour
+                cours
             </div>
         </a>
         <a href="test_metier.php">

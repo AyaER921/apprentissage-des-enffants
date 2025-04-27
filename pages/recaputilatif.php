@@ -1,3 +1,5 @@
+<!--Erroubaai Aya-->
+
 <?php
     $max_score = $_GET['max_score'];
     $score_total = $_GET['score_total'];

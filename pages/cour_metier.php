@@ -59,8 +59,8 @@ $sources = $PDO->query($sql)->fetchAll(PDO::FETCH_ASSOC);
             <div class="menu-option">COURS ET TESTS</div>
         </a>
 
-        <a href="a_propos.php">
-            <div class="menu-option">A PROPOS DE</div>
+        <a href="deconnexion.php">
+            <div class="menu-option">DECONNEXION</div>
         </a>
 
     </div> 

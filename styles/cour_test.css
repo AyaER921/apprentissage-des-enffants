@@ -3,9 +3,7 @@
     width: 300px;
     display: grid;
     justify-content: center;
-}
 
-body {
     background-color: rgb(151, 80, 248);
     display: flex;
     justify-content: center;   
@@ -13,6 +11,8 @@ body {
     height: 100vh;             
     margin: 0;               
 }
+
+
 
 .cour, .test{
     background-color: rgb(198, 252, 200);

@@ -1,7 +1,8 @@
 <?php
 require '../database/database.php';
 $pdo = Database::getInstance()->getConnection();
-$id_utilisateur = 1;
+session_start();
+$id_utilisateur = $_SESSION['user_id'];
 
 $requeteQuestions = 'SELECT * FROM questions INNER JOIN sources on id_r = id';
 $questions = $pdo->query($requeteQuestions)->fetchAll(PDO::FETCH_ASSOC);
@@ -50,7 +51,7 @@ if(isset($_GET['id_q']) && isset($_GET['score_total'])) {
         $stmt = $pdo->prepare('UPDATE repense SET 
             id_q_courante = :id_question_courante,
             score_actuel = :score_total,
-            dernier_score = :dernier_max_score;
+            dernier_score = :dernier_max_score
          WHERE id_utilisateur = :id_utilisateur');
 
         $stmt->execute([
@@ -130,9 +131,10 @@ $autres_questions = array_filter($questions, function($q) use ($question_courant
             <div class="menu-option">COURS ET TESTS</div>
         </a>
 
-        <a href="a_propos.php">
-            <div class="menu-option">A PROPOS DE</div>
+        <a href="deconnexion.php">
+            <div class="menu-option">DECONNEXION</div>
         </a>
+        
     </div>
 
     <div class="container">

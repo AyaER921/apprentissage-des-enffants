@@ -35,9 +35,14 @@ Clique sur ton premier défi et laisse-toi guider !
     </div>
 
     <div class="menu-slide" id="menu">
+        <a href="accueil.php">
         <div class="menu-option">ACCEUIL</div>
+        </a>
+
+        <a href="login.php">
         <div class="menu-option">CONNEXION</div>
-        <div class="menu-option">A PROPOS DE</div>
+        </a>
+    
     </div> 
     <script src="../scripts/menu.js"></script>
 </body>

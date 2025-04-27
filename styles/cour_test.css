@@ -1,0 +1,50 @@
+.container{
+    height: 200px;
+    width: 300px;
+    display: grid;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(151, 80, 248);
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;               
+}
+
+.cour, .test{
+    background-color: rgb(198, 252, 200);
+    border: 5px solid rgb(245, 189, 32);
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 50px;
+    width: 300px;
+}
+
+.cour{
+    padding-bottom: 6px;
+    color: black;
+    font-size: 40px;
+}
+
+.cour:hover, .test:hover{
+    transform: scale(0.8);
+}
+
+.test{
+    color: black;
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+

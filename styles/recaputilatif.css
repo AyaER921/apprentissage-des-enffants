@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(90deg, rgb(54, 1, 89), rgb(207, 141, 245));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.block{
+    background-color: rgb(227, 188, 247);
+    border-radius: 20px;
+    width: 700px;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-option{
+    font-size: 20px;
+    color: azure;
+    background-color: rgb(90, 10, 152);
+    border: 10px solid rgb(90, 10, 152) ;
+    border-radius: 15px;
+}
+
+p{
+    font-size: 20px;
+}

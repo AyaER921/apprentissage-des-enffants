@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 27 avr. 2025 à 21:17
+-- Généré le : dim. 27 avr. 2025 à 23:04
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -102,6 +102,52 @@ INSERT INTO `sources` (`id`, `image`, `texte`, `audio`, `video`, `extension_imag
 (16, 'policier', 'policier', 'policier', '', 'jpg', 'mp3', ''),
 (17, 'pompier', 'pompier', 'pompier', '', 'jpg', 'mp3', ''),
 (18, 'servante', 'servante', 'servante', '', 'jpg', 'mp3', '');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateurs`
+--
+
+CREATE TABLE `utilisateurs` (
+  `id` int(11) NOT NULL,
+  `prenom` varchar(100) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `motdepasse` varchar(255) NOT NULL,
+  `score` int(11) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`id`, `prenom`, `nom`, `email`, `motdepasse`, `score`) VALUES
+(1, '', '', '', '$2y$10$Yu7hOBBBdvyJTRAfITUPyODxFfrybLcs10vZN8y5/da7Hbf23KX2a', 0),
+(2, 'sara', 'chanouane', 'sarachanouane@gmail.com', '$2y$10$42n6ZSv5Hgi5QG5MZeUF4OMa2fjQtoSd59LeXJp6qerQxpzxWvoFi', 0),
+(3, 'oumaima', 'chano', 'chanooumaima@gmial.com', '$2y$10$051i7kDgzrSYQwWKya3h5uEUYqTE2TbjtFsleVFKaS3vvxV2mdhYm', 0),
+(4, 'jannate', 'gh', 'jannaite@gmail.com', '$2y$10$.G/DqSXC.Z6YlpB0bj2SOu35mCvYnZfNga3VT0hbPMgIJGjv7HYGu', 16);
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `utilisateurs`
+--
+ALTER TABLE `utilisateurs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `utilisateurs`
+--
+ALTER TABLE `utilisateurs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

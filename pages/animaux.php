@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Espace Nuit - Les Animaux</title>
-    <link href="style_animaux.css" rel="../styles/stylesheet">
+    <link href="../styles/style_animaux.css" rel="../styles/stylesheet">
 </head>
 <body style="background-image: url('images/nightkids3.jpg'); background-size: cover;background-repeat: no-repeat; background-size: 1500px 650px">
 

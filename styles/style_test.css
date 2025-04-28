@@ -1,0 +1,123 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: yellowgreen;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: dark;
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 32px;
+    animation: pop 0.8s ease-in-out;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+video {
+    margin: 20px 30px;
+    border: 4px solid #ffa502;
+    border-radius: 10px;
+    animation: bounce 2s infinite;
+    width: 250px; /* même largeur que form */
+    height: 450px;
+    vertical-align: top; /* pour aligner en haut */
+}
+img {
+    margin: 20px 30px;
+    border: 4px solid #ffa502;
+    border-radius: 10px;
+    animation: bounce 2s infinite;
+    width: 400px; /* pareil que la vidéo et le form */
+    height: 400px;
+    object-fit: cover; /* important pour bien remplir sans déformer */
+    vertical-align: top;
+}
+audio {
+    margin: 20px 30px;
+    padding: 10px;
+    border: 4px solid #ffa502;
+    border-radius: 10px;
+    background-color: #fff8dc;
+    width: 300px; /* même largeur que vidéo, image, form */
+    height: 60px; /* hauteur adaptée au lecteur audio */
+    vertical-align: top;
+    animation: bounce 2s infinite;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+form {
+    display: inline-block;
+    background-color: #fff8dc;
+    padding: 20px; /* réduit pour équilibrer avec la vidéo */
+    border-radius: 15px;
+    border: 3px dashed #ffb347;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: slideIn 1s ease-in-out;
+    width: 250px; /* même largeur que vidéo */
+    height: 400px; /* même hauteur que vidéo */
+    vertical-align: top; /* pour aligner en haut */
+}
+
+
+label {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+label:hover {
+    transform: scale(1.05);
+    color: #e67e22;
+}
+
+input[type="radio"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 40px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+    transform: scale(1.1);
+}
+
+/* Animations */
+
+@keyframes pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

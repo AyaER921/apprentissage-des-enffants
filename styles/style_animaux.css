@@ -1,0 +1,45 @@
+        body {
+            color: white;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+        }
+        .choix-sections {
+            margin-top: 40px;
+        }
+        .choix-btn {
+            background-color: greenyellow;
+            color: #0a043c;
+            padding: 20px 50px;
+            margin: 80px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .choix-btn:hover {
+            background-color: #ffe066;
+            transform: scale(1.05);
+        }
+        
+        .cours, .test {
+            background: rgba(10, 20, 50, 0.7);
+            border: 2px solid #4d4dff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 45%;
+        }
+        
+        button {
+            background: #ffcc00;
+            color: #0a043c;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #ffdd33;
+        }

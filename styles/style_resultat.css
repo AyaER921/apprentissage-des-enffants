@@ -1,0 +1,59 @@
+/* style_resultat.css */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ff7f50, #ffb6c1);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 50px;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin: 30px 0;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: slideUp 1s ease-in-out;
+}
+
+a:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

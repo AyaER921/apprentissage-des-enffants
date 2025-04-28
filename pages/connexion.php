@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
     if (password_verify($motdepasse, $user['motdepasse'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['prenom'] = $user['prenom'];
-        header("Location: index.php");
+        header("Location: acceuil_apprentissage.php");
     } else {
         echo "Mot de passe incorrect.";
     }

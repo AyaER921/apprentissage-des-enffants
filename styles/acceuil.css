@@ -1,0 +1,51 @@
+body{
+	background: peru;
+	color: white;
+	font-family: 'Comic Sans MS', cursive;
+	text-align: center;
+
+}
+
+h1{
+	color: #ffcc00;
+    text-shadow: 0 0 10px greenyellow;
+    text-align: center;
+}
+.owl-icon{
+	width: 100px;
+	height: 100px;
+	transition: transform 0.3s;
+}
+.owl-icon:hover{
+	transform: rotate(30deg); 
+	animation: glow 2s infinite alternate;
+}
+@keyframes glow{
+	from{filter: drop-shadow(0 0 5px #ffcc00);}
+	to {filter: drop-shadow(0 0 15px #ffcc00);}
+}
+.images{
+	width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0  15px rgba(255, 204, 0, 0.5);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float{
+	0%, 100% {transform: translateY(0);}
+	50% { transform: translateY(-20px); }
+}
+h2{
+	color: #ffcc00;
+	margin-top: 15px;
+	font-size: 1.5em;
+}
+p{
+	color: white;
+	margin-top: 10px;
+	font-size: 1.1em;
+}

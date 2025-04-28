@@ -112,6 +112,15 @@ $autres_questions = array_filter($questions, function($q) use ($question_courant
     <title>test métiers</title>
     <link rel="stylesheet" href="../styles/test_metier.css">
     <link rel="stylesheet" href="../styles/accueil.css">
+   <style>
+        body{
+    background: linear-gradient(90deg, rgb(54, 1, 89), rgb(207, 141, 245));
+    }
+        .cadre{ 
+            background-color: white;
+            box-shadow: 10px 10px 25px rgba(91, 28, 173, 0.5);
+        }
+    </style>
 
 </head>
 <body>

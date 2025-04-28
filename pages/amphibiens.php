@@ -6,7 +6,7 @@ include '../database/db.php';
 <html>
 <head>
     <title>Les animaux</title>
-    <link href="style_projet.css" rel="stylesheet">
+    <link href="../styles/style_projet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="animal-page">

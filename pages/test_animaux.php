@@ -24,7 +24,7 @@ $answers = mysqli_query($conn, "SELECT * FROM test_answers WHERE question_id = "
 <html>
 <head>
     <title>Test Animaux</title>
-    <link rel="stylesheet" href="style_test.css">
+    <link rel="stylesheet" href="../styles/style_test.css">
 </head>
 <body>
     

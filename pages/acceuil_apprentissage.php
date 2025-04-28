@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> AstroKids -Apprentissage</title>
-	<link rel ="stylesheet" href="acceuil.css">
+	<link rel ="stylesheet" href="../styles/acceuil.css">
 	
 </head>
 <body>

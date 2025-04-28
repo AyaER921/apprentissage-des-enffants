@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>AstroKids les animaux </title>
-	<link href="style_projet.css" rel="stylesheet">
+	<link href="../styles/style_projet.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>

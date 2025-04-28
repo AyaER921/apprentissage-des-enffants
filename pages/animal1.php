@@ -41,7 +41,7 @@ try {
 <html>
 <head>
 	<title><?php echo $animal['nom'];?></title>
-	<link href="style_projet.css" rel="stylesheet">
+	<link href="../styles/style_projet.css" rel="stylesheet">
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -47,7 +47,7 @@ unset($_SESSION['resultats_detail']);
 <head>
     <meta charset="UTF-8">
     <title>Résultats du Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;

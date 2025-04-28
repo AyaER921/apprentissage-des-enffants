@@ -16,7 +16,7 @@
  ?>
  
 <head>
-    <link href="style_resultat.css" rel="stylesheet">
+    <link href="../styles/style_resultat.css" rel="stylesheet">
  <body>
      <h1>Test terminé !</h1>
      <p>Ton score : <?php echo $score; ?> points</p>

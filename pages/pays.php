@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?php echo $_GET['pays']; ?></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <style>
         body {
             background-color: #f4f4f4; /* Gris clair */
@@ -351,7 +351,7 @@
             echo '</div>';
 
             if (!empty($info['drapeau'])) {
-                echo '<img src="images/' . $info['drapeau'] . '" alt="Drapeau de ' . $pays . '">';
+                echo '<img src="..ressources/images/' . $info['drapeau'] . '" alt="Drapeau de ' . $pays . '">';
             }
 
             if (!empty($info['capitale'])) {
@@ -364,7 +364,7 @@
 
             if (!empty($info['audio'])) {
                 echo '<audio controls>';
-                echo '<source src="sons/' . $info['audio'] . '" type="audio/mpeg">';
+                echo '<source src="../ressources/audios/' . $info['audio'] . '" type="audio/mpeg">';
                 echo 'Votre navigateur ne supporte pas l\'élément audio.';
                 echo '</audio>';
             }

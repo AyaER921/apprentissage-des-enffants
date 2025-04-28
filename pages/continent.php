@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Continent</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <style>
         body {
             background-color: #fff59d;
@@ -116,7 +116,7 @@
     <div class="pays-container">
         <?php foreach ($pays as $p) { ?>
             <a href="pays.php?continent=<?php echo $continent; ?>&pays=<?php echo $p['nom']; ?>">
-                <img src="images/<?php echo $p['drapeau']; ?>" alt="<?php echo $p['nom']; ?>">
+                <img src="../ressources/images/<?php echo $p['drapeau']; ?>" alt="<?php echo $p['nom']; ?>">
                 <p><?php echo $p['nom']; ?></p>
             </a>
         <?php } ?>

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cour et Test</title>
-    <link rel="stylesheet" href="../styles/cour_test.css">
+    <link rel="stylesheet" href="../styles/cour_et_test.css">
 <body>
 
     <div class="container">
